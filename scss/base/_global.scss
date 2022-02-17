@@ -2,8 +2,91 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
    }
 
+// COLOR PALLETTE
+$color-bg: #0f0e17;
+$color-btn: #ff8906;
+$color-headlines: #fffffe;
+$color-text-btn: #fffffe;
+$color-p: #a7a9be;
+$color-secondary: #f25f4c;
+$color-main: #fffffe;
+$color-tertiary: #e53170;
+$color-highlight: #ff8906;
+
+//    BTN STYLES
+.highlight {
+    color: $color-highlight !important;
+}
+
+.primary-btn {
+    color: $color-text-btn;
+    background-color: $color-btn;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid $color-btn;
+    &:hover {
+        color: $color-btn;
+        background-color: $color-text-btn;
+        border: 2px solid $color-btn;
+    }
+}
+
+.secondary-btn {
+    color: $color-text-btn;
+    background-color: $color-secondary;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid $color-secondary;
+    &:hover {
+        color: $color-secondary;
+        background-color: $color-text-btn;
+        border: 2px solid $color-secondary;
+    }
+}
+
+.tertiary-btn {
+    color: $color-text-btn;
+    background-color: $color-tertiary;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid $color-tertiary;
+    &:hover {
+        color: $color-tertiary;
+        background-color: $color-text-btn;
+        border: 2px solid $color-tertiary;
+    }
+}
+
+.outline-btn {
+    color: $color-btn;
+    border: 2px solid $color-btn;
+    border-radius: 5px;
+    padding: 0.5em;
+    text-decoration: none;
+    &:hover {
+        color: $color-text-btn;
+        background-color: $color-btn;
+    }
+}
+
+.outline-btn-secondary {
+    color: $color-secondary;
+    border: 2px solid $color-secondary;
+    border-radius: 5px;
+    padding: 0.5em;
+    text-decoration: none;
+    &:hover {
+        color: $color-text-btn;
+        background-color: $color-secondary;
+    }
+}
+   
 // @media screen and (min-width: 992px) {
 
 //     main {

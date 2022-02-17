@@ -1,0 +1,29 @@
+.header {
+    background-color: $color-bg;
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            margin: 0.5em;
+        }
+        &__nav {
+            &__ul {
+                display: flex;
+                flex-direction: row;
+                margin: 0 0 0 auto;
+
+                &__item {
+                    margin-right: 2em;
+                    list-style: none;
+                    
+                    a {
+                        text-decoration: none;
+                        color: $color-text-btn;
+                    }
+                }
+            }
+        }
+    }
+}
