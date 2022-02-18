@@ -5,20 +5,34 @@
     text-decoration: none;
    }
 
-// COLOR PALLETTE
-$color-bg: #0f0e17;
-$color-btn: #ff8906;
-$color-headlines: #fffffe;
-$color-text-btn: #fffffe;
-$color-p: #a7a9be;
-$color-secondary: #f25f4c;
-$color-main: #fffffe;
-$color-tertiary: #e53170;
-$color-highlight: #ff8906;
+   
+   // COLOR PALLETTE
+   $color-bg: #0f0e17;
+   $color-btn: #ff8906;
+   $color-headlines: #fffffe;
+   $color-text-btn: #fffffe;
+   $color-p: #a7a9be;
+   $color-secondary: #f25f4c;
+   $color-main: #fffffe;
+   $color-tertiary: #e53170;
+   $color-primary: #ff8906;
 
+   @mixin blur-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    background: $color-bg;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+    border: 5px solid $color-primary;
+}
+   
 //    BTN STYLES
 .highlight {
-    color: $color-highlight !important;
+    color: $color-tertiary !important;
 }
 
 .primary-btn {

@@ -6,7 +6,7 @@
 }
 
 .highlight {
-  color: #ff8906 !important;
+  color: #e53170 !important;
 }
 
 .primary-btn {
@@ -81,6 +81,7 @@
 .header__navbar {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #a7a9be;
 }
 .header__navbar__logo {
   margin: 0.5em;
@@ -101,6 +102,46 @@
 
 .hero {
   background-color: #0f0e17;
+  padding: 2em;
+}
+.hero__brand {
+  color: #ff8906;
+}
+.hero__text__title {
+  color: #fffffe;
+  font-size: 2.1vw;
+}
+.hero__text__description {
+  color: #fffffe;
+  font-size: 1.8vw;
+  margin-top: 1.5em;
+}
+.hero__buttons {
+  margin-top: 1.5em;
+}
+
+.about {
+  padding: 2em;
+}
+.about__card {
+  background-color: #0f0e17;
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em;
+  background: #0f0e17;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px black;
+  border: 5px solid #ff8906;
+}
+.about__card h2 {
+  color: #a7a9be;
+}
+.about__card h3 {
+  color: #e53170;
 }
 
 /*# sourceMappingURL=style.css.map */

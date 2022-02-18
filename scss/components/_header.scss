@@ -1,10 +1,10 @@
 .header {
     background-color: $color-bg;
-
     &__navbar {
         display: flex;
         justify-content: space-between;
-
+        border-bottom: 2px solid $color-p;
+        
         &__logo {
             margin: 0.5em;
         }

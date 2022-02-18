@@ -1,0 +1,14 @@
+.about {
+    padding: 2em;
+    &__card {
+        background-color: $color-bg;
+        margin: 2em 0;
+        @include blur-card;
+        h2 {
+            color: $color-p;
+        }
+        h3 {
+            color: $color-tertiary;
+        }
+    }
+}
