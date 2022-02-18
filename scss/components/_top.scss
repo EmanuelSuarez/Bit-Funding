@@ -1,0 +1,17 @@
+.top {
+    background-color: $color-bg;
+    padding: 2em;
+    &__card {
+        height: 50vh;
+        // border: 1px solid $color-main;
+        h3 {
+
+        }
+        figure {
+            img {
+                width: 100%;
+
+            }
+        }
+    }
+}
