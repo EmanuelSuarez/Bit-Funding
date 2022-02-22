@@ -77,7 +77,7 @@
     }
 }
 
-.outline-btn {
+.outline-btn-primary {
     color: $color-btn;
     border: 2px solid $color-btn;
     border-radius: 5px;
@@ -100,11 +100,3 @@
         background-color: $color-secondary;
     }
 }
-   
-// @media screen and (min-width: 992px) {
-
-//     main {
-//         min-height: 45vh;
-//     }
-    
-// }

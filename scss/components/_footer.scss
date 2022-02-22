@@ -1,0 +1,8 @@
+.footer {
+    background-color: $color-bg;
+    &__social-media {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 1em;
+    }
+}

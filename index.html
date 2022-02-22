@@ -70,7 +70,7 @@
                 
             <!-- HERO BUTTONS -->
             <div class="hero__buttons col col-lg-6 offset-lg-6 text-center text-lg-start">
-                <a class="outline-btn" href="">Top projects</a>
+                <a class="outline-btn-primary" href="">Top projects</a>
                 <a class="tertiary-btn" href="">How to fund</a>
             </div>
             </div>
@@ -105,35 +105,47 @@
     <section class="top">
         <div class="container">
             <div class="row">
-                <div class="top__card col-12 col-md-6 col-lg-4">
-                    <h3>Decentraland Real Estate Fund</h3>
-                    <figure>
-                        <img src="images/real-estate.jpg" alt="">
-                    </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Ab quaerat dolorum reiciendis molestiae provident velit.
-                    </p>
-                    <a class="outline-btn" href="">Fund</a>
+                <div class="top__title col">
+                    <small>Meet our</small>
+                    <h2>top projects</h2>
                 </div>
-                <div class="top__card col-12 col-md-6 col-lg-4">
-                    <h3>Bitcoin Merch Marketplace Dapp</h3>
-                    <figure>
+            </div>
+            <div class="row">
+                <div class="top__card project-card col-12 col-md-6 col-lg-4 mb-4">
+                    <h3>Decentraland Real Estate</h3>
+                    <figure class="project-card__img">
                         <img src="images/real-estate.jpg" alt="">
                     </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Ab quaerat dolorum reiciendis molestiae provident velit.
-                    </p>
-                    <a class="outline-btn" href="">Fund</a>
+                    <div class="project-card__body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Ab quaerat dolorum reiciendis molestiae provident velit.
+                        </p>
+                        <a class="project-card__body__btn primary-btn" href="">Fund</a>
+                    </div>
                 </div>
-                <div class="top__card col-12 col-md-6 col-lg-4">
-                    <h3>Metavese Real Estate Fund</h3>
-                    <figure>
-                        <img src="images/real-estate.jpg" alt="">
+                <div class="top__card project-card col-12 col-md-6 col-lg-4 mb-4">
+                    <h3>Bitcoin Merch Marketplace</h3>
+                    <figure class="project-card__img">
+                        <img src="images/btc-merch.jpg" alt="">
                     </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Ab quaerat dolorum reiciendis molestiae provident velit.
-                    </p>
-                    <a class="outline-btn" href="">Fund</a>
+                    <div class="project-card__body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Ab quaerat dolorum reiciendis molestiae provident velit.
+                        </p>
+                        <a class="project-card__body__btn primary-btn" href="">Fund</a>
+                    </div>
+                </div>
+                <div class="top__card project-card col-12 col-md-6 col-lg-4 mb-4">
+                    <h3>Green World DAO</h3>
+                    <figure class="project-card__img">
+                        <img src="images/green-world-dao.jpg" alt="">
+                    </figure>
+                    <div class="project-card__body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Ab quaerat dolorum reiciendis molestiae provident velit.
+                        </p>
+                        <a class="project-card__body__btn primary-btn" href="">Fund</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,12 +156,45 @@
     //                                        How To Fund                                      //
     /////////////////////////////////////////////////////////////////////////////////////////////-->
 
+    <section id="how-to-fund" class="htf">
+        <div class="container">
+            <div class="row">
+                <div class="htf__steps col-12 col-sm-4 mt-4">
+                    <img src="images/one.png" alt="Number one">
+                    <p>Find your favorite decentralized project at <a href="sections/projects.html">projects</a></p>
+                </div>
+                <div class="htf__steps col-12 col-sm-4 mt-4">
+                    <img src="images/two.png" alt="Number two">
+                    <p>Choose one of our supported tokens</p>
+                </div>
+                <div class="htf__steps col-12 col-sm-4 mt-4">
+                    <img src="images/three.png" alt="Number Three">
+                    <p>Fund the project and recieve automated news every week</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="htf__video col">
+                    <p class="video-title">Explanation video</p>
+                    <iframe width="392" height="220" src="https://www.youtube.com/embed/XIMLoLxmTDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 <!--/////////////////////////////////////////////////////////////////////////////////////////////
     //                                          Footer                                         //
     /////////////////////////////////////////////////////////////////////////////////////////////-->
 
-
+    <footer class="footer" id="footer">
+        <div class="row">
+            <div class="col footer__social-media">
+                <a href="https://discord.com/app" target="_blank"><img src="images/discord.png" alt="Discord" ></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>  
+            </div>
+        </div>
+    </footer>
 
     <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

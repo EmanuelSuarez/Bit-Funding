@@ -1,0 +1,21 @@
+.htf {
+    background-color: $color-p;
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        img {
+            margin: 0 auto;
+            max-width: 20vh;
+        }
+    }
+    &__video {
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        iframe {
+            margin: 0 auto;
+        }
+    }
+}

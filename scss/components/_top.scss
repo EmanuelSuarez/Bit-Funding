@@ -1,17 +1,14 @@
 .top {
     background-color: $color-bg;
     padding: 2em;
-    &__card {
-        height: 50vh;
-        // border: 1px solid $color-main;
-        h3 {
-
-        }
-        figure {
-            img {
-                width: 100%;
-
-            }
-        }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-p;
+        margin-bottom: 2em;
     }
+    &__card {
+        background-color: $color-bg;
+        @import 'card';
+        }
 }

@@ -51,14 +51,14 @@
   border: 2px solid #e53170;
 }
 
-.outline-btn {
+.outline-btn-primary {
   color: #ff8906;
   border: 2px solid #ff8906;
   border-radius: 5px;
   padding: 0.5em;
   text-decoration: none;
 }
-.outline-btn:hover {
+.outline-btn-primary:hover {
   color: #fffffe;
   background-color: #ff8906;
 }
@@ -146,11 +146,106 @@
   background-color: #0f0e17;
   padding: 2em;
 }
-.top__card {
-  height: 50vh;
+.top__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #a7a9be;
+  margin-bottom: 2em;
 }
-.top__card figure img {
+.top__card {
+  background-color: #0f0e17;
+}
+.top__card .project-card {
+  padding-bottom: 30px;
+}
+.top__card .project-card h3 {
+  font-size: large;
+  background-color: #a7a9be;
+  border: 2px solid #ff8906;
+  border-bottom: 0ch;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.top__card .project-card__img {
+  margin: 0;
+  border-left: 2px solid #ff8906;
+  border-right: 2px solid #ff8906;
+}
+.top__card .project-card__img img {
   width: 100%;
+}
+.top__card .project-card__body {
+  background-color: #a7a9be;
+  border: 2px solid #ff8906;
+  border-top: none;
+  text-align: center;
+}
+.top__card .project-card__body__btn {
+  display: block;
+  margin: 1em;
+}
+
+.project-card {
+  padding-bottom: 30px;
+}
+.project-card h3 {
+  font-size: large;
+  background-color: #a7a9be;
+  border: 2px solid #ff8906;
+  border-bottom: 0ch;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+.project-card__img {
+  margin: 0;
+  border-left: 2px solid #ff8906;
+  border-right: 2px solid #ff8906;
+}
+.project-card__img img {
+  width: 100%;
+}
+.project-card__body {
+  background-color: #a7a9be;
+  border: 2px solid #ff8906;
+  border-top: none;
+  text-align: center;
+}
+.project-card__body__btn {
+  display: block;
+  margin: 1em;
+}
+
+.htf {
+  background-color: #a7a9be;
+}
+.htf__steps {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.htf__steps img {
+  margin: 0 auto;
+  max-width: 20vh;
+}
+.htf__video {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.htf__video iframe {
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #0f0e17;
+}
+.footer__social-media {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
