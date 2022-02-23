@@ -49,6 +49,7 @@
   text-transform: uppercase;
   background-color: #a7a9be;
   border: 2px solid #ff8906;
+  border-radius: 15px 15px 0 0;
   border-bottom: 0ch;
   text-align: center;
   margin: 0;
@@ -65,6 +66,7 @@
 .project-card__body {
   background-color: #a7a9be;
   border: 2px solid #ff8906;
+  border-radius: 0 0 15px 15px;
   border-top: none;
   text-align: start;
   padding: 1em;
@@ -97,6 +99,14 @@
   display: flex;
   justify-content: space-around;
   padding: 2em 1em;
+}
+
+.project__title {
+  padding: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0f0e17;
+  font-family: "Lato", sans-serif;
 }
 
 /*# sourceMappingURL=projects.css.map */

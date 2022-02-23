@@ -2,3 +2,8 @@
 @import 'components/header';
 @import 'components/card';
 @import 'components/footer';
+
+.project__title {
+    padding: 2em 0;
+    @include titles($color-bg)
+}
