@@ -7,13 +7,21 @@
     &__text {
         &__title {
             color: $color-headlines;
+            font-family: $font1;
         }
         &__description {
+            font-family: $font2;
             color: $color-headlines;
             margin-top: 1.5em;
         }
     }
     &__buttons {
         margin-top: 1.5em;
+        a:first-child {
+            @include outline-btn($color-primary,$color-bg)
+        }
+        a:last-child {
+            @include btn($color-headlines,$color-tertiary)
+        }
     }
 }

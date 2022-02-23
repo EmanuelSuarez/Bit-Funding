@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
    }
-
    
    // COLOR PALLETTE
    $color-bg: #0f0e17;
@@ -16,6 +15,11 @@
    $color-main: #fffffe;
    $color-tertiary: #e53170;
    $color-primary: #ff8906;
+
+   
+   //  FONT
+    $font1: 'Lato', sans-serif;
+    $font2: 'Oswald', sans-serif;
 
    @mixin blur-card {
     display: flex;
@@ -29,74 +33,43 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
     border: 5px solid $color-primary;
 }
+
+    @mixin titles($fontColor) {
+        text-align: center;
+        text-transform: uppercase;
+        color: $fontColor;
+        font-family: $font1;
+    }
+
+    @mixin btn($primaryColor,$secondaryColor) {
+    color: $primaryColor;
+    background-color: $secondaryColor;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid $secondaryColor;
+    font-family: $font1;
+    &:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
+        border: 2px solid $secondaryColor;
+        }
+    }
    
-//    BTN STYLES
-.highlight {
-    color: $color-tertiary !important;
-}
-
-.primary-btn {
-    color: $color-text-btn;
-    background-color: $color-btn;
-    padding: 0.5em;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid $color-btn;
-    &:hover {
-        color: $color-btn;
-        background-color: $color-text-btn;
-        border: 2px solid $color-btn;
+    @mixin outline-btn($primaryColor,$secondaryColor) {
+        color: $primaryColor;
+        border: 2px solid $primaryColor;
+        border-radius: 5px;
+        padding: 0.5em;
+        text-decoration: none;
+        font-family: $font1;
+        &:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
     }
-}
 
-.secondary-btn {
-    color: $color-text-btn;
-    background-color: $color-secondary;
-    padding: 0.5em;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid $color-secondary;
-    &:hover {
-        color: $color-secondary;
-        background-color: $color-text-btn;
-        border: 2px solid $color-secondary;
-    }
-}
 
-.tertiary-btn {
-    color: $color-text-btn;
-    background-color: $color-tertiary;
-    padding: 0.5em;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid $color-tertiary;
-    &:hover {
-        color: $color-tertiary;
-        background-color: $color-text-btn;
-        border: 2px solid $color-tertiary;
+    .highlight {
+        color: $color-tertiary !important;
     }
-}
-
-.outline-btn-primary {
-    color: $color-btn;
-    border: 2px solid $color-btn;
-    border-radius: 5px;
-    padding: 0.5em;
-    text-decoration: none;
-    &:hover {
-        color: $color-text-btn;
-        background-color: $color-btn;
-    }
-}
-
-.outline-btn-secondary {
-    color: $color-secondary;
-    border: 2px solid $color-secondary;
-    border-radius: 5px;
-    padding: 0.5em;
-    text-decoration: none;
-    &:hover {
-        color: $color-text-btn;
-        background-color: $color-secondary;
-    }
-}

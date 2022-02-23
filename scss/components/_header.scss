@@ -1,5 +1,7 @@
 .header {
     background-color: $color-bg;
+    position: sticky;
+    top: 0;
     &__navbar {
         display: flex;
         justify-content: space-between;
@@ -7,6 +9,9 @@
         
         &__logo {
             margin: 0.5em;
+            img {
+                border-radius: 15px;
+            }
         }
         &__nav {
             &__ul {
@@ -19,6 +24,7 @@
                     list-style: none;
                     
                     a {
+                        font-family: $font1;
                         text-decoration: none;
                         color: $color-text-btn;
                     }

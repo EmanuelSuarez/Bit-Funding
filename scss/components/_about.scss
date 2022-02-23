@@ -1,13 +1,19 @@
 .about {
     padding: 2em;
+    &__title {
+        @include titles($color-bg)
+    }
     &__card {
         background-color: $color-bg;
         margin: 2em 0;
         @include blur-card;
         h2 {
             color: $color-p;
+            font-family: $font2;
+            padding-left: 1em;
         }
         h3 {
+            font-family: $font1;
             color: $color-tertiary;
         }
     }

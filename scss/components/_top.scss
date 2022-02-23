@@ -2,10 +2,7 @@
     background-color: $color-bg;
     padding: 2em;
     &__title {
-        text-align: center;
-        text-transform: uppercase;
-        color: $color-p;
-        margin-bottom: 2em;
+        @include titles($color-p)
     }
     &__card {
         background-color: $color-bg;

@@ -1,7 +1,9 @@
 .project-card {
     padding-bottom: 30px;
     h3 {
+        font-family: $font1;
         font-size: large;
+        text-transform: uppercase;
         background-color: $color-p;
         border: 2px solid $color-primary;
         border-bottom: 0ch;
@@ -21,10 +23,16 @@
         background-color: $color-p;
         border: 2px solid $color-primary;
         border-top: none;
-        text-align: center;
+        text-align: start;
+        padding: 1em;
+        p {
+            font-family: $font2;
+        }
         &__btn {
             display: block;
             margin: 1em;
+            text-align: center;
+            @include btn($color-headlines,$color-primary)
         }
     }
 }
