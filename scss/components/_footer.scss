@@ -4,5 +4,10 @@
         display: flex;
         justify-content: space-around;
         padding: 2em 1em;
+        a img {
+            @media (max-width: $breakpoint-sm) {
+                width: 100px;
+            }
+        }
     }
 }

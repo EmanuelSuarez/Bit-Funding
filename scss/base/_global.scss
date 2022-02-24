@@ -15,11 +15,13 @@
    $color-main: #fffffe;
    $color-tertiary: #e53170;
    $color-primary: #ff8906;
-
    
    //  FONT
     $font1: 'Lato', sans-serif;
     $font2: 'Oswald', sans-serif;
+
+   // breakpoints
+   $breakpoint-sm: 576px;
 
    @mixin blur-card {
     display: flex;
@@ -31,7 +33,7 @@
     background: $color-bg;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
-    border: 5px solid $color-primary;
+    border: 3px solid $color-primary;
 }
 
     @mixin titles($fontColor) {
@@ -42,17 +44,21 @@
     }
 
     @mixin btn($primaryColor,$secondaryColor) {
-    color: $primaryColor;
-    background-color: $secondaryColor;
-    padding: 0.5em;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid $secondaryColor;
-    font-family: $font1;
-    &:hover {
-        color: $secondaryColor;
-        background-color: $primaryColor;
+        color: $primaryColor;
+        background-color: $secondaryColor;
+        padding: 0.5em;
+        text-decoration: none;
+        border-radius: 5px;
         border: 2px solid $secondaryColor;
+        font-family: $font1;
+        &:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+            border: 2px solid $secondaryColor;
+        }
+        @media (max-width: $breakpoint-sm) {
+            font-size: 0.7em;
+            padding: 0.3em;
         }
     }
    
@@ -66,6 +72,10 @@
         &:hover {
             color: $secondaryColor;
             background-color: $primaryColor;
+        }
+        @media (max-width: $breakpoint-sm) {
+            font-size: 0.7em;
+            padding: 0.3em;
         }
     }
 

@@ -10,11 +10,14 @@
         h2 {
             color: $color-p;
             font-family: $font2;
-            padding-left: 1em;
         }
         h3 {
             font-family: $font1;
             color: $color-tertiary;
+        }
+        @media (max-width: $breakpoint-sm) {
+            margin: 2em auto;
+            width: 90% !important;
         }
     }
 }

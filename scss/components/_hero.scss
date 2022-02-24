@@ -8,6 +8,9 @@
         &__title {
             color: $color-headlines;
             font-family: $font1;
+            @media (max-width: $breakpoint-sm) {
+                font-size: 1.2em;
+            }
         }
         &__description {
             font-family: $font2;
@@ -18,10 +21,10 @@
     &__buttons {
         margin-top: 1.5em;
         a:first-child {
-            @include outline-btn($color-primary,$color-bg)
+            @include outline-btn($color-primary,$color-bg);
         }
         a:last-child {
-            @include btn($color-headlines,$color-tertiary)
+            @include btn($color-headlines,$color-tertiary);
         }
     }
 }
